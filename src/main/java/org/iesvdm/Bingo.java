@@ -144,7 +144,7 @@ public class Bingo {
         for (int i = 0; i < arrayBi.length; i++)
         {
             // Recorro las 3 posiciones de cada columna
-            for (int j = 0; j < arrayBi[0].length; j++)
+            for (int j = 0; j < (arrayBi[0].length); j++)
             {
                 if(i == 0) // Caso columna 0 (1-9)
                 {
