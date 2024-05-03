@@ -42,13 +42,27 @@ public class BingoTest {
     }
 
     public void ponerBlancosTest() {
+        //Creamos un array bidimensional con las filas y las columnas.
         int [][] arrayBi = new int[3][6];
+        //Traemos los valores de la clase bingo.
         Bingo.ponerBlancos(arrayBi);
+
+        //Rellenamos el array.
         for (int i = 0; i < arrayBi.length; i++) {
             for (int j = 0; j < arrayBi[i].length; j++) {
                 System.out.print(arrayBi[i][j] + "\t");
             }
             System.out.println();
         }
+
+
+    }
+
+    @Test
+    public void buscarFila() {
+        //Creamos un array bidimensional con las filas y las columnas
+        int [][] arrayBi = new int[3][6];
+        //Traemos los valores de la clase bingo.
+        Bingo.buscarFila(arrayBi);
     }
 }
